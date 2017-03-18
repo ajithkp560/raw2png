@@ -65,6 +65,7 @@ public class raw2png {
                     }
                     buff.setData(wr);
                     ImageIO.write(buff, "png", new File(imageFiles[y].getPath().replace("raw", "")+"png"));
+                    System.out.println(imageFiles[y].getName()+" is converted");
                 }
                 catch(Exception e){
                     System.out.println(e.getMessage());

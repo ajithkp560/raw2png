@@ -16,6 +16,12 @@ import java.util.List;
 import java.util.Scanner;
 import javax.imageio.ImageIO;
 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 /**
  *
  * @author AJITH KP
@@ -33,12 +39,17 @@ public class raw2png {
                     return name.endsWith(".raw");
                 }
             };
+            int width = 1152;
+            int height = 1152;
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Width of image: ");
+            width = sc.nextInt();
+            System.out.print("Height of image: ");
+            height = sc.nextInt();
             File[] imageFiles = root.listFiles(imgFilter);
             for(int y=0;y<imageFiles.length;y++){
                 FileInputStream f;
                 String line = "";
-                int width = 1152;
-                int height = 1152;
                 List<Integer> arr = new ArrayList<Integer>();
                 try {
                     Path path = Paths.get(imageFiles[y].getPath());

@@ -24,7 +24,10 @@ import javax.imageio.ImageIO;
 
 /**
  *
- * @author TERMINAL
+ * @author AJITH KP
+ * (c) Ajith Kp (c) - http://fb.com/ajithkp560
+ * http://www.terminalcoders.blogspot.com - http://www.tctech.in
+ * 
  */
 public class raw2png {
     public static void main(String[] args) throws IOException {
